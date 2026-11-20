@@ -1,58 +1,58 @@
 package com.ohgiraffers.api.hair.model.dto;
 
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class User {
-    private int id;
-    private String first_name;
-    private String last_name;
+
+    private long id;
+    private String firstName;
+    private String lastName;
     private String email;
-    private char gender;
+    private String gender;
     private LocalDate birthday;
-    private LocalDate reservation_date;
-    private LocalTime reservation_time;
-    private LocalDateTime created_at;
+    private LocalDate reservationDate;
+    private LocalTime reservationTime;
+    private LocalDateTime createdAt;
 
     public User() {
     }
 
-    public User(int id, String first_name, String last_name, String email, char gender, LocalDate birthday, LocalDate reservation_date, LocalTime reservation_time, LocalDateTime created_at) {
+    public User(long id, String firstName, String lastName, String email, String gender, LocalDate birthday, LocalDate reservationDate, LocalTime reservationTime, LocalDateTime createdAt) {
         this.id = id;
-        this.first_name = first_name;
-        this.last_name = last_name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.gender = gender;
         this.birthday = birthday;
-        this.reservation_date = reservation_date;
-        this.reservation_time = reservation_time;
-        this.created_at = created_at;
+        this.reservationDate = reservationDate;
+        this.reservationTime = reservationTime;
+        this.createdAt = createdAt;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -63,11 +63,11 @@ public class User {
         this.email = email;
     }
 
-    public char getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -79,42 +79,42 @@ public class User {
         this.birthday = birthday;
     }
 
-    public LocalDate getReservation_date() {
-        return reservation_date;
+    public LocalDate getReservationDate() {
+        return reservationDate;
     }
 
-    public void setReservation_date(LocalDate reservation_date) {
-        this.reservation_date = reservation_date;
+    public void setReservationDate(LocalDate reservationDate) {
+        this.reservationDate = reservationDate;
     }
 
-    public LocalTime getReservation_time() {
-        return reservation_time;
+    public LocalTime getReservationTime() {
+        return reservationTime;
     }
 
-    public void setReservation_time(LocalTime reservation_time) {
-        this.reservation_time = reservation_time;
+    public void setReservationTime(LocalTime reservationTime) {
+        this.reservationTime = reservationTime;
     }
 
-    public LocalDateTime getCreated_at() {
-        return created_at;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreated_at(LocalDateTime created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", first_name='" + first_name + '\'' +
-                ", last_name='" + last_name + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", gender=" + gender +
                 ", birthday=" + birthday +
-                ", reservation_date=" + reservation_date +
-                ", reservation_time=" + reservation_time +
-                ", created_at=" + created_at +
+                ", reservationDate=" + reservationDate +
+                ", reservationTime=" + reservationTime +
+                ", createdAt=" + createdAt +
                 '}';
     }
 }
